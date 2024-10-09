@@ -29,6 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Exchanges.TopicExc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Exchanges.TopicExchange.Publisher", "Exchanges\TopicExchange\RabbitMQ.Exchanges.TopicExchange.Publisher\RabbitMQ.Exchanges.TopicExchange.Publisher.csproj", "{EA7FEBAC-BBF6-4E0F-8C5E-B027C7D1515A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HeaderExchange", "HeaderExchange", "{9CA4C58E-CB47-4554-B60A-AA55AAAD22B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Exchanges.HeaderExchange.Publisher", "Exchanges\HeaderExchange\RabbitMQ.Exchanges.HeaderExchange.Publisher\RabbitMQ.Exchanges.HeaderExchange.Publisher.csproj", "{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Exchanges.HeaderExchange.Consumer", "Exchanges\HeaderExchange\RabbitMQ.Exchanges.HeaderExchange.Consumer\RabbitMQ.Exchanges.HeaderExchange.Consumer.csproj", "{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +73,14 @@ Global
 		{EA7FEBAC-BBF6-4E0F-8C5E-B027C7D1515A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA7FEBAC-BBF6-4E0F-8C5E-B027C7D1515A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA7FEBAC-BBF6-4E0F-8C5E-B027C7D1515A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +97,9 @@ Global
 		{9AE9518A-9CA9-4E1E-B697-95375BCF10ED} = {BF151BDB-29D8-4802-BEC0-14953E12247A}
 		{A019A145-49A8-4215-A584-E62F9E9AEC8A} = {9AE9518A-9CA9-4E1E-B697-95375BCF10ED}
 		{EA7FEBAC-BBF6-4E0F-8C5E-B027C7D1515A} = {9AE9518A-9CA9-4E1E-B697-95375BCF10ED}
+		{9CA4C58E-CB47-4554-B60A-AA55AAAD22B9} = {BF151BDB-29D8-4802-BEC0-14953E12247A}
+		{4DEAE6DA-25A4-4CE0-9A2C-F77029289AC2} = {9CA4C58E-CB47-4554-B60A-AA55AAAD22B9}
+		{52DF8EFA-2A9C-4646-98B0-0EF1E9151FA7} = {9CA4C58E-CB47-4554-B60A-AA55AAAD22B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A88867-66EF-485D-BBBB-39FFBF7836E6}
