@@ -9,20 +9,25 @@ using IConnection connection = factory.CreateConnection();
 using IModel channel = connection.CreateModel();
 
 channel.ExchangeDeclare(
-    exchange: "direct-exchange-example", 
-    type: ExchangeType.Direct);
+    exchange: "fanout-exchange-example",
+    type: ExchangeType.Fanout);
 
-string queueName = channel.QueueDeclare().QueueName;
+Console.WriteLine("Kuyruk adını giriniz: ");
+string queueName = Console.ReadLine();
+
+channel.QueueDeclare(
+    queue: queueName,
+    exclusive: false);
 
 channel.QueueBind(
-    queue: queueName, 
-    exchange: "direct-exchange-example", 
-    routingKey: "direct-queue-example");
+    queue: queueName,
+    exchange: "fanout-exchange-example",
+    routingKey: String.Empty);
 
 EventingBasicConsumer consumer = new(channel);
 channel.BasicConsume(
     queue: queueName,
-    autoAck: true, 
+    autoAck: true,
     consumer: consumer);
 consumer.Received += (sender, e) =>
 {

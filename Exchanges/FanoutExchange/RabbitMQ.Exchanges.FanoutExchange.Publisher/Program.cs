@@ -8,17 +8,16 @@ using IConnection connection = factory.CreateConnection();
 using IModel channel = connection.CreateModel();
 
 channel.ExchangeDeclare(
-    exchange: "direct-exchange-example", 
-    type: ExchangeType.Direct);
+    exchange: "fanout-exchange-example", 
+    type: ExchangeType.Fanout);
 
-while (true)
+for (int i = 0; i < 100; i++)
 {
-    Console.Write("Mesaj: ");
-    string message = Console.ReadLine();
-    byte[] bytemessage = Encoding.UTF8.GetBytes(message);
+    await Task.Delay(1000);
+    byte[] bytemessage = Encoding.UTF8.GetBytes($"Fanout Exchange {i}");
 
     channel.BasicPublish(
-        exchange: "direct-exchange-example", 
-        routingKey: "direct-queue-example", 
+        exchange: "fanout-exchange-example", 
+        routingKey: String.Empty, 
         body: bytemessage);
 }
