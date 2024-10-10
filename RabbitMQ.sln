@@ -49,6 +49,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageDesigns.Pub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageDesigns.PubSub.Consumer", "MessageDesigns\PubSub\RabbitMQ.MessageDesigns.PubSub.Consumer\RabbitMQ.MessageDesigns.PubSub.Consumer.csproj", "{C12E2C18-91B2-4531-81FD-680DF5407DAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkQueue", "WorkQueue", "{78A459C3-EC02-4A83-BF0D-BDE45FAF86F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageDesigns.WorkQueue.Publisher", "MessageDesigns\WorkQueue\RabbitMQ.MessageDesigns.WorkQueue.Publisher\RabbitMQ.MessageDesigns.WorkQueue.Publisher.csproj", "{1EA32233-D2EC-482D-80F2-0C6F51E24986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.MessageDesigns.WorkQueue.Consumer", "MessageDesigns\WorkQueue\RabbitMQ.MessageDesigns.WorkQueue.Consumer\RabbitMQ.MessageDesigns.WorkQueue.Consumer.csproj", "{C51086F1-EF63-461D-81E9-641DE5B4F462}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +117,14 @@ Global
 		{C12E2C18-91B2-4531-81FD-680DF5407DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12E2C18-91B2-4531-81FD-680DF5407DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12E2C18-91B2-4531-81FD-680DF5407DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA32233-D2EC-482D-80F2-0C6F51E24986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA32233-D2EC-482D-80F2-0C6F51E24986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA32233-D2EC-482D-80F2-0C6F51E24986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA32233-D2EC-482D-80F2-0C6F51E24986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51086F1-EF63-461D-81E9-641DE5B4F462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51086F1-EF63-461D-81E9-641DE5B4F462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51086F1-EF63-461D-81E9-641DE5B4F462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51086F1-EF63-461D-81E9-641DE5B4F462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +150,9 @@ Global
 		{68D42AB1-0EBD-4B16-82CE-E27CCA2FD3E7} = {8A6A3BD9-FE09-43E2-B01F-AA3C2D7875BC}
 		{BAF8B8E0-5637-444F-8075-A019265F1757} = {68D42AB1-0EBD-4B16-82CE-E27CCA2FD3E7}
 		{C12E2C18-91B2-4531-81FD-680DF5407DAC} = {68D42AB1-0EBD-4B16-82CE-E27CCA2FD3E7}
+		{78A459C3-EC02-4A83-BF0D-BDE45FAF86F6} = {8A6A3BD9-FE09-43E2-B01F-AA3C2D7875BC}
+		{1EA32233-D2EC-482D-80F2-0C6F51E24986} = {78A459C3-EC02-4A83-BF0D-BDE45FAF86F6}
+		{C51086F1-EF63-461D-81E9-641DE5B4F462} = {78A459C3-EC02-4A83-BF0D-BDE45FAF86F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8A88867-66EF-485D-BBBB-39FFBF7836E6}
