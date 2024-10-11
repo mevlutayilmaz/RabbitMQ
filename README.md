@@ -1,20 +1,21 @@
 # RabbitMQ
 RabbitMQ mesaj kuyruğu (message queue) sistemidir. Yazdığımız programımız üzerinden yapılacak asenkron (asynchronous) işlemleri sıraya koyup, bunları sırayla kuyruktan çekip gerçekleyerek ilerleyen ölçeklenebilir ve performanslı bir sistemdir.
 
-## İçindekiler
+## 📚 İçindekiler
 
-- [Message Queue Nedir?](#message-queue-nedir)
-- [Message Broker Nedir?](#message-broker-nedir)
-- [RabbitMQ’yu Neden Kullanmalıyız?](#rabbitmqyu-neden-kullanmalıyız)
-- [RabbitMQ’nun İşleyişi Nasıldır?](#rabbitmqnun-i̇şleyişi-nasıldır)
-  - [Exchange Nedir?](#exchange-nedir)
-- [Basitçe Kuyruğa Mesaj Gönderme ve Okuma](#basitçe-kuyruğa-mesaj-gönderme-ve-okuma)
-- [Gelişmiş Kuyruk Mimarisi](#gelismis-kuyruk-mimarisi)
-- [Exchange Kullanımı](#exchange-kullanımı)
-- [Mesaj Tasarımları Nelerdir?](#mesaj-tasarımları-nelerdir)
-  - [Yaygın Mesaj Tasarımları Nelerdir?](#yaygın-mesaj-tasarımları-nelerdir)
-- [Enterprise Service Bus & MassTransit Nedir?](#enterprise-service-bus-masstransit-nedir)
-  - [MassTransit Nedir?](#masstransit-nedir)
+1. [Message Queue Nedir?](#message-queue-nedir)
+2. [Message Broker Nedir?](#message-broker-nedir)
+3. [🐇 RabbitMQ’yu Neden Kullanmalıyız?](#rabbitmqyu-neden-kullanmalıyız)
+4. [🔄 RabbitMQ’nun İşleyişi Nasıldır?](#rabbitmqnun-i̇şleyişi-nasıldır)
+   - [⚡ Exchange Nedir?](#exchange-nedir)
+5. [🚀 Basitçe Kuyruğa Mesaj Gönderme ve Okuma](#basitçe-kuyruğa-mesaj-gönderme-ve-okuma)
+6. [⚙️ Gelişmiş Kuyruk Mimarisi](#gelişmiş-kuyruk-mimarisi)
+7. [🔗 Exchange Kullanımı](#exchange-kullanımı)
+8. [📩 Mesaj Tasarımları Nelerdir?](#mesaj-tasarımları-nelerdir)
+   - [💡 Yaygın Mesaj Tasarımları Nelerdir?](#yaygın-mesaj-tasarımları-nelerdir)
+9. [🚏 Enterprise Service Bus & MassTransit Nedir?](#enterprise-service-bus-masstransit-nedir)
+   - [🚋 MassTransit Nedir?](#masstransit-nedir)
+
 
 ## Message Queue Nedir
 - Message Queue, yazılım sistemlerinde iletişim için kullanılan bir yapıdır.
