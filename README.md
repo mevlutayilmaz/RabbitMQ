@@ -128,6 +128,7 @@ Yani, iki servis arasında **message broker** ile yapılacak haberleşme süre
           
   ![requestreponse](https://github.com/user-attachments/assets/c6097da6-7e6e-49eb-ab0d-9352a9609606)
 
+[Mesaj Tasarımları için](MessageDesigns)
 
 ## Enterprise Service Bus & MassTransit Nedir?
 ESB, servisler arası entegrasyon sağlayan komponentlerin bütünüdür diyebiliriz. ESB, **RabbitMQ** gibi farklı sistemlerin birbirleriyle etkileşime girmesine sağlayan teknolojilerin kullanımını ve yönetilebilirliğini kolaylaştırmakta ve buna bir ortam sağlamaktadır.
